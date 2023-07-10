@@ -1,0 +1,30 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nombre Mystère</title>
+  </head>
+  <body>
+    <script>
+      let nombreUser = 0;
+      let nombreMystere = prompt("Saisir le nombre mystère :");
+
+      while (nombreUser != nombreMystere) {
+        nombreUser = prompt("Saisir un nombre :");
+        if (nombreUser < nombreMystere) {
+          alert("C'est plus grand");
+        }
+
+        if (nombreUser > nombreMystere) {
+          alert("C'est plus petit");
+        }
+
+        console.log(nombreUser);
+      }
+      alert("Vous avez trouvé le nombre MYSTERE");
+    </script>
+  </body>
+</html>

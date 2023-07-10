@@ -1,0 +1,29 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fonctions</title>
+  </head>
+  <body>
+    <script>
+        let nb1 = 4 ;
+        let nb2 = 6;
+
+        function addition(nb1, nb2) {
+            return nb1+nb2;            
+        }
+        //test on la fonction addition classique
+        console.log("addition de ", addition(nb1,nb2));
+
+
+        // fonction fléché
+
+        const multiplication = (nb1,nb2) => nb1 * nb2;
+        console.log("multiplication :", multiplication(nb1,nb2));
+        
+    </script>
+  </body>
+</html>
